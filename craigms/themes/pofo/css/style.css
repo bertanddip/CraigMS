@@ -1,0 +1,171 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face {
+    font-family: 'WebSymbolsRegular';
+    src: url('../symbols/websymbols-regular-webfont.eot');
+    src: url('../symbols/websymbols-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../symbols/websymbols-regular-webfont.woff') format('woff'),
+         url('../symbols/websymbols-regular-webfont.ttf') format('truetype'),
+         url('../symbols/websymbols-regular-webfont.svg#WebSymbolsRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+*{
+	margin: 0;
+	padding: 0;	
+}
+
+body{
+	background: #333 url(../images/bg.jpg) repeat;
+	font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, p{
+	margin-bottom: 10px;
+}
+
+h1{
+	font-size: 28px;
+	font-weight: 900;	
+}
+
+h2{
+	font-size: 28px;
+	font-weight: 900;
+}
+
+p{
+	font-size: 14px;
+	line-height: 18px;	
+}
+
+ul{
+	font-size: 14px;
+	line-height: 18px;	
+	margin-left: 20px;
+}
+
+.symbols{
+    font-family: 'WebSymbolsRegular';
+}
+
+.clearfix{
+	clear:both;
+}
+
+#logo{
+	width: 160px;
+	height: 40px;
+	font-size: 18px;
+	font-weight: 900;
+	float:left;
+}
+
+
+#header-wrapper{
+	width: 100%;
+	height: 50px;
+	position:fixed;
+	background:#FFF;
+	top: 0;
+	border-bottom: solid 1px #ebebeb;
+	z-index: 999;
+}
+
+#header{
+	width: 960px;
+	margin: 10px auto;
+}
+
+
+#nav{
+	width: 400px;
+	float:left;
+}
+
+#nav ul{
+	list-style: none;
+    margin-top: 5px;
+}
+
+#nav li{
+	float:left;
+	margin-right: 20px;
+}
+
+#nav li a {
+	color:#000;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+#social{
+	width: 400px;
+	float: right;
+	font-size: 14px;
+}
+
+#wrapper{
+	width: 960px;
+	margin: 70px auto 0 auto;
+	background:#FFF;
+}
+
+#content{
+	padding: 30px;
+	width: 900px;
+	float:left;
+}
+
+.entry{
+	width: 900px;
+	float:left;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+	border-bottom: solid 1px #ebebeb;
+}
+
+.entry-img{
+	width: 280px;
+	height: 240px;
+	border: solid 1px #CCC;
+	float:left;
+	margin-right: 18px;
+}
+
+.entry-text{
+	width: 600px;
+	float:left;
+}
+
+#footer{
+	width: 960px;
+	margin: 20px auto;
+}
+
+#footer p{
+	font-size: 10px;
+}
+
+ul.group-list{
+    list-style: none;
+}
+
+img.text-image-image{
+    float: left;
+    margin-right: 20px;
+}
+span.text-image-heading, span.text-image-text{
+    width: 560px;
+    float: left;
+    margin-bottom: 10px;
+}
+
+span.text-image-heading{
+    font-size: 18px;
+    font-weight: bold;
+}
+	

@@ -1,0 +1,72 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+}
+
+body{
+margin: 20px;
+}
+
+h1{
+font-size: 28px;
+}
+
+h2{
+font-size: 24px;
+}
+
+h3{
+font-size: 20px;
+}
+
+h4{
+font-size: 18px;
+}
+
+h5{
+
+}
+
+p{
+font-size: 14px;
+margin-bottom: 10px;
+}
+
+ul{
+font-size: 14px;
+margin-bottom: 10px;
+margin-left: 20px;
+}
+
+li{
+margin-bottom: 20px;
+}
+
+ol{
+
+}
+
+a{
+
+}
+
+img{
+max-width: 96%;
+margin: 10px auto;
+}
+
+#wrapper{
+padding: 20px;
+border: solid 1px #666;
+width: 810px;
+margin: 0 auto;
+}
+
+
+/*** BLOG ***/
+
+ul.textGroupList li{
+padding: 10px;
+background: #ebebeb;
+}

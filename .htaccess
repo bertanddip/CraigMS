@@ -1,0 +1,18 @@
+RewriteEngine On
+
+RewriteCond %{HTTP_HOST} ^http://www.webindexsearch.com/demo/index.php
+RewriteRule (.*) http://www.webindexsearch.com/demo/$1 [R=301,L]
+
+RewriteEngine On
+
+RewriteRule ^([a-zA-Z0-9_-]+)$ page.php?page=$1
+RewriteRule ^([a-zA-Z0-9_-]+)/$ page.php?page=$1
+
+RewriteRule ^group/([a-zA-Z0-9_-]+)$ group.php?group=$1
+RewriteRule ^group/([a-zA-Z0-9_-]+)/$ group.php?group=$1
+
+RewriteRule ^group/([a-zA-Z0-9_-]+)/([0-9]+)$ single.php?group=$1&id=$2
+RewriteRule ^group/([a-zA-Z0-9_-]+)/([0-9]+)/$ single.php?group=$1&id=$2
+
+RewriteRule ^page/([a-zA-Z0-9_-]+)$ custom.php?page=$1
+RewriteRule ^page/([a-zA-Z0-9_-]+)/$ custom.php?page=$1

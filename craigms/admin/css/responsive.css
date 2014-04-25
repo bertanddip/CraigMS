@@ -1,0 +1,48 @@
+@media only screen and (min-width: 00px) and (max-width: 480px) {
+
+	#adminNav, #userNav{
+	width: 100%;
+	max-width: 100%;
+	float: left;
+	position: relative;
+	}	 
+		  
+	ul.admin, #wrapper, .col50{
+	width: 96%;
+	padding: 2%;
+	}	 
+
+	
+}
+
+ 
+ 
+ 
+ 
+ 
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+
+	#adminNav, #userNav{
+	width: 100%;
+	max-width: 100%;
+	float: left;
+	position: relative;
+	}	 
+		  
+	ul.admin, #wrapper, .col50{
+	width: 96%;
+	padding: 2%;
+	}	
+	
+}
+ 
+ 
+ 
+ 
+ 
+@media only screen and (min-width: 768px) and (max-width: 1024px) { 
+}
+ 
+@media only screen and (min-width: 1024px) { 
+
+}

@@ -1,0 +1,23 @@
+@charset "utf-8";
+/* CSS Document */
+
+#slideshow {
+    float: left;
+	width: 960px;
+    height:436px;
+}
+
+#slideshow IMG {
+    position:absolute;
+    z-index:8;
+    opacity:0.0;
+}
+
+#slideshow IMG.active {
+    z-index:10;
+    opacity:1.0;
+}
+
+#slideshow IMG.last-active {
+    z-index:9;
+}

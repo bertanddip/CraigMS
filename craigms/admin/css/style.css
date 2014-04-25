@@ -1,0 +1,292 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+body{
+font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+font-size: 14px;
+background: #ebebeb;
+color: #333;
+}
+h1{
+color: #999;
+}
+
+ul{
+list-style: none;
+}
+
+/*** admin general ***/
+
+#login{
+width: 300px;
+margin: 100px auto;
+}
+
+#wrapper{
+width: 84%;
+padding: 0%;
+float: right;
+}
+
+#wrapper img{
+float: left;
+max-width: 100%;
+width: auto;
+height: auto;
+max-height: 100px;
+margin: 0 10px 10px 0;
+}
+
+input[type=text], input[type=password]{
+padding: 0px;
+margin: 5px 0;
+}
+
+textarea{
+min-height: 200px;
+margin: 5px 0;
+width: 100%;
+}
+
+input[type=submit]{
+padding: 3px;
+background: #dadada;
+color: #333;
+border: solid 1px #ccc;
+}
+
+input[type=submit]:hover{
+background: #ccc;
+}
+
+input[type=file]{
+padding: 0px;
+margin: 5px 0;
+}
+
+input[type=file]:hover{
+background: #ccc;
+}
+
+label{
+padding: 8px 8px 8px 0;
+margin: 5px 0;
+}
+
+span.adminHeading{
+width: 100%;
+font-size: 18px;
+line-height: 28px;
+font-weight: bold;
+margin: 15px 0;
+}
+
+span.include{
+width: 100%;
+font-size: 12px;
+color: #ccc;
+float: left;
+margin-top: 10px;
+}
+
+.red{
+color: red;
+}
+
+.green{
+color: green;
+}
+
+a.redButton{
+padding: 1px;
+background: #bf2e1a;
+color: #fff !important;
+border: solid 1px #9c2312;
+text-decoration: none;
+float: left;
+margin: 0 5px 5px 0;
+}
+
+a.redButton:hover{
+background: #9c2312;
+}
+
+.addtomenu{
+float: left; margin-right: 5px;
+}
+
+.successPopup, .popupSuccess{
+position: absolute;
+top: 10px;
+right: 10px;
+color: red;
+}
+
+/*** end admin general ***/
+
+
+
+/*** admin sidebar ***/
+
+.adminLogo{
+width: 80%;
+padding: 10%;
+border: none;
+}
+
+#adminNav{
+width: 16%;
+min-height: 100%;
+background: #333;
+position: fixed;
+}
+
+ul.admin{
+	width: 100%;
+	margin: 10px 0;
+	list-style: none;
+	float: left;
+}
+
+ul.admin li {
+}
+
+ul.admin li a{
+text-decoration: none;
+color: #fff;
+padding: 3%;
+float: left;
+width: 94%;
+}
+
+ul.admin li a:hover {
+color: #666;
+background-color: #ccc;
+}
+
+ul.admin li:hover{
+}
+
+
+#userNav{
+width: 16%;
+min-height: 100%;
+background: #ccc;
+position: fixed;
+}
+
+ul.user{
+	width: 100%;
+	margin: 10px 0;
+	list-style: none;
+	float: left;
+}
+
+ul.user li {
+}
+
+ul.user li a{
+text-decoration: none;
+color: #333;
+padding: 3%;
+float: left;
+width: 94%;
+}
+
+ul.user li a:hover {
+color: #ccc;
+background-color: #333;
+}
+
+ul.user li:hover{
+}
+
+
+
+.poweredBy{
+width: 94%;
+padding: 3%;
+float: left;
+margin: 40px 0 0 0;
+color: #666;
+font-size: 12px;
+}
+
+/*** end admin sidebar ***/
+
+/*** lists ***/
+
+ul#textList, ul#imageList, ul#adminList{
+	margin-bottom: 30px;
+	list-style: none;
+}
+
+ul#textList a, ul#imageList a, ul#adminList a{
+	font-weight: bold;
+	text-decoration: none;
+	color: #333;
+}
+
+ul#textList li, ul#imageList li, ul#adminList li{
+margin-bottom: 20px;
+margin-right: 20px;
+background: #efefef;
+padding: 20px;
+border: solid 1px #ccc;
+width: 40%;
+float: left;
+}
+
+.usermenu{
+margin-bottom: 10px;
+background: #efefef;
+padding: 10px;
+border: solid 1px #ccc;
+}
+
+
+/*** end lists ***/
+
+/*** columns ***/
+
+.col40{
+width: 40%;
+padding: 0%;
+float: left;
+}
+
+.col20{
+width: 20%;
+padding: 0%;
+float: left;
+}
+
+
+.col50{
+width: 46%;
+padding: 2%;
+float: left;
+}
+
+.colFull{
+width: 96%;
+padding: 2%;
+float: left;
+}
+
+.col100{
+width: 96%;
+padding: 2%;
+float: left;
+background: #666;
+}
+
+.col100 p{
+color: #ccc;
+}
+
+/*** end columns ***/
+
+
