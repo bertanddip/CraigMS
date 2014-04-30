@@ -17,6 +17,7 @@ else {
 <div class="colFull">
 <h1>Hi <?php echo $_SESSION["myusername"] ?>!</h1>
 <p>Please select an item from the left menu to edit.</p>
+    
 </div>
 
 <?php } ?>

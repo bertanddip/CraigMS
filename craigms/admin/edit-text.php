@@ -4,9 +4,11 @@
 if (isset($_GET['id'])) {
 $id = $_GET['id'];
 } 
-$text=$_POST['text']; 
-$text = str_replace('\'', '\'\'', $text);
+
+
 $name=$_POST['name']; 
+$text=$_POST['text']; 
+
 
 if(isset($_POST['Submit']) && !$errors){
 mysql_query("UPDATE text SET text='$text', name='$name' WHERE id=$id ") ;  

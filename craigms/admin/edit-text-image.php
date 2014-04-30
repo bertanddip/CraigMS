@@ -6,7 +6,6 @@ $id = $_GET['id'];
 } 
 
 $text=$_POST['text']; 
-$text = str_replace('\'', '\'\'', $text);
 $Description=$_POST['Description'];
 
 
@@ -25,7 +24,7 @@ if(isset($_POST['SubmitTextImage']) && !$errors) {
 		mysql_query("UPDATE textimage SET text='$text', name='$Description' WHERE id='$id' ") ;
 	}
 
-	elseif(isset($Filename)){
+	elseif(isset($Filename) && move_uploaded_file($_FILES['Filename']['tmp_name'], $target)){
 		echo "<div class='successPopup'>Update Successful!</div>";
 		mysql_query("UPDATE textimage SET text='$text', imageurl='$fullimgurl', name='$Description' WHERE id='$id' ") ;
 	}

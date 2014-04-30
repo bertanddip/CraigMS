@@ -35,6 +35,8 @@ or die(mysql_error());
 <script src="js/tinymce/tinymce.min.js"></script>
 <script>
 tinymce.init({
+
+
 	selector:'textarea',
     editor_deselector : 'mceNoEditor',
 	entity_encoding:'numeric',
@@ -45,7 +47,10 @@ tinymce.init({
     ],
 	toolbar: false,
     insertdatetime_dateformat: "%Y-%m-%d",
-    insertdatetime_timeformat: "%H:%M:%S"});
+    insertdatetime_timeformat: "%H:%M:%S"
+
+                                         
+});
 </script>
 </head>
 <body>

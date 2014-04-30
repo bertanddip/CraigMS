@@ -70,7 +70,8 @@ or die(mysql_error());
 			
 <br clear="all" />
 			<span class="include">To add this to your website template, please paste the following code:<br />
-			<b>&lt;?php $_GET['group'] = '<?php echo $info['slug']; ?>'; include('craigms/includes/group.php'); ?&gt;</b></span>
+			<b>&lt;?php $group=<?php echo $info['slug']; ?>; include('craigms/includes/group.php'); ?&gt;</b></span>
+            
 		</li>
 <?php } ?>
 <li><a style="color: #666; font-weight: normal;" href="new-group.php">+ Add New Group</a></li>

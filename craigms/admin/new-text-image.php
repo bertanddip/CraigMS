@@ -14,7 +14,6 @@ $Filename=basename( $_FILES['Filename']['name']);
 $fullimgurl = $info['url'].'/craigms/images/'.$Filename;
 $Description=$_POST['Description'];
 $text=$_POST['text'];
-$text = str_replace('\'', '\'\'', $text);
 
 
 //Writes the Filename to the server

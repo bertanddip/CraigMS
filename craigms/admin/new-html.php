@@ -10,7 +10,6 @@ $page = $_GET['page'];
 } 
 
 $text=$_POST['text']; 
-$text = str_replace('\'', '\'\'', $text);
 $name=$_POST['name']; 
 
 if(isset($_POST['Submit']) && !$errors){

@@ -13,7 +13,6 @@ $fullimgurl = $info['url'].'/craigms/images/'.$Filename;
 $Description=$_POST['Description'];
 $text=$_POST['text']; 
 $id=$_POST['id']; 
-$text = str_replace('\'', '\'\'', $text);
 $name=$_POST['name']; 
 
 
@@ -69,7 +68,7 @@ or die(mysql_error());
 					<form method="post" action="" enctype="multipart/form-data">
 						<input type="hidden" name="id" value="<?php echo $textimageinfo['id'] ?>" />
 						
-						<input name="Description" value="<?php echo $textimageinfo['name'] ?>" />
+						<input type="text" name="Description" value="<?php echo $textimageinfo['name'] ?>" />
 						<br clear="all" /><br />
 						
 

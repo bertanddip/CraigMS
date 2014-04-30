@@ -89,7 +89,7 @@ or die(mysql_error());
 			
 <br clear="all" />
 			<span class="include">To add this to your website template, please paste the following code:<br />
-			<b>&lt;?php $_GET['id'] = '<?php echo $info['id']; ?>'; include('craigms/includes/single-html.php'); ?&gt;</b></span>
+			<b>&lt;?php $id=<?php echo $info['id']; ?>; include('craigms/includes/single-html.php'); ?&gt;</b></span>
 		</li>
 <?php } ?>
 <li><a style="color: #666; font-weight: normal;" href="new-html.php?posttype=page">+ Add New HTML Box</a></li>

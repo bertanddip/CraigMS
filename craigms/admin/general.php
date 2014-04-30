@@ -1,34 +1,28 @@
 <?php include 'includes/header.php'; ?>
 <?php
  
-function findexts ($filename) 
-{ 
-$filename = strtolower($filename) ; 
-$exts = split("[/\\.]", $filename) ; 
-$n = count($exts)-1; 
-$exts = $exts[$n]; 
-return $exts; 
-} 
 
-$ext = findexts ($_FILES['logo']['name']) ; 
-$mylogo = "images/logo";
-$mylogourl = $mylogo.'.'.$ext; 
-$target = "../".$mylogo.'.'.$ext; 
 
 $url=$_POST['url']; 
 $theme=$_POST['theme']; 
 $themeurl = $url.'/craigms/themes/'.$theme; 
+
+$target = "../images/";
+$target = $target . basename( $_FILES['logo']['name']);
+$logo=basename( $_FILES['logo']['name']);
+$logourl = $url.'/craigms/images/'.$logo;
  
 if(isset($_POST['Submit']) && !$errors) {
 
-	if(empty($Filename)){
+	if(empty($logo)){
 		echo "<div class='successPopup'>Update Successful!</div>";
 		mysql_query("UPDATE content SET url='$url', theme='$theme', themeurl='$themeurl' WHERE id=1 ") ;
 	}
 
-	elseif(isset($Filename)){
+	elseif(isset($logo) && move_uploaded_file($_FILES['logo']['tmp_name'], $target)){
+
 		echo "<div class='successPopup'>Update Successful!</div>";
-		mysql_query("UPDATE content SET url='$url', logo='$mylogourl', theme='$theme', themeurl='$themeurl' WHERE id=1  ") ;  
+		mysql_query("UPDATE content SET url='$url', logo='$logourl', theme='$theme', themeurl='$themeurl' WHERE id=1  ") ;  
 	}
 
 }
@@ -46,7 +40,7 @@ or die(mysql_error());
 
 <div class="colFull">
 
-<img src="../<?php Print $info['logo']; ?>" width="150" height="150" /><br clear="all" /><br clear="all" />
+<img src="<?php Print $info['logo']; ?>" width="150" height="150" /><br clear="all" /><br clear="all" />
 
 
 <form name="general" method="post" enctype="multipart/form-data" action="">

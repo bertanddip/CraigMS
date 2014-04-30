@@ -5,7 +5,6 @@ if (isset($_GET['id'])) {
 $id = $_GET['id'];
 } 
 $text=$_POST['text']; 
-$text = str_replace('\'', '\'\'', $text);
 $name=$_POST['name']; 
 
 if(isset($_POST['Submit']) && !$errors){

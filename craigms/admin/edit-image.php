@@ -23,7 +23,7 @@ if(isset($_POST['SubmitImage']) && !$errors) {
 		mysql_query("UPDATE images SET name='$Description' WHERE groupname='$group' AND id='$id' ") ;
 	}
 
-	elseif(!empty($Filename)){
+	elseif(!empty($Filename) && move_uploaded_file($_FILES['Filename']['tmp_name'], $target)){
 		echo "<div class='successPopup'>Update Successful!</div>";
 		mysql_query("UPDATE images SET imageurl='$fullimgurl', name='$Description' WHERE groupname='$group' AND id='$id' ") ;
 	}

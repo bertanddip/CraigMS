@@ -57,7 +57,7 @@ if ($_SESSION['usertype'] == 1){
 
 	<div id="adminNav">	
 		<a href="<?php Print $info['url']; ?>" target="_blank">
-			<img class="adminLogo" src="../<?php Print $info['logo']; ?>"  />
+			<img class="adminLogo" src="<?php Print $info['logo']; ?>"  />
 		</a>
 
 		<br clear="all" />
@@ -92,7 +92,7 @@ else {
 
 	<div id="userNav">	
 		<a href="<?php Print $info['url']; ?>" target="_blank">
-			<img class="adminLogo" src="../<?php Print $info['logo']; ?>"  />
+			<img class="adminLogo" src="<?php Print $info['logo']; ?>"  />
 		</a>
 
 		<br clear="all" />
